@@ -115,10 +115,10 @@
   ),
   'app' => 
   array (
-    'name' => 'Laravel',
+    'name' => 'Timedoor Bookstore',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost:8000',
+    'url' => 'https://timedoor-bookstore.vercel.app',
     'frontend_url' => 'http://localhost:3000',
     'asset_url' => NULL,
     'timezone' => 'UTC',
@@ -328,18 +328,18 @@
         ),
       ),
     ),
-    'prefix' => 'laravel-cache-',
+    'prefix' => 'timedoor-bookstore-cache-',
   ),
   'database' => 
   array (
-    'default' => 'sqlite',
+    'default' => 'mysql',
     'connections' => 
     array (
       'sqlite' => 
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => '/home/workspace/project/timedoor-bookstore/database/database.sqlite',
+        'database' => 'timedoorbookstore_resultcard',
         'prefix' => '',
         'foreign_key_constraints' => true,
         'busy_timeout' => NULL,
@@ -350,11 +350,11 @@
       array (
         'driver' => 'mysql',
         'url' => NULL,
-        'host' => '127.0.0.1',
-        'port' => '3306',
-        'database' => 'laravel',
-        'username' => 'root',
-        'password' => '',
+        'host' => 'at0plk.h.filess.io',
+        'port' => '61001',
+        'database' => 'timedoorbookstore_resultcard',
+        'username' => 'timedoorbookstore_resultcard',
+        'password' => '3f4d31795da04b578d4f62796b89106f10ecc5f4',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -370,11 +370,11 @@
       array (
         'driver' => 'mariadb',
         'url' => NULL,
-        'host' => '127.0.0.1',
-        'port' => '3306',
-        'database' => 'laravel',
-        'username' => 'root',
-        'password' => '',
+        'host' => 'at0plk.h.filess.io',
+        'port' => '61001',
+        'database' => 'timedoorbookstore_resultcard',
+        'username' => 'timedoorbookstore_resultcard',
+        'password' => '3f4d31795da04b578d4f62796b89106f10ecc5f4',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -390,11 +390,11 @@
       array (
         'driver' => 'pgsql',
         'url' => NULL,
-        'host' => '127.0.0.1',
-        'port' => '5432',
-        'database' => 'laravel',
-        'username' => 'root',
-        'password' => '',
+        'host' => 'at0plk.h.filess.io',
+        'port' => '61001',
+        'database' => 'timedoorbookstore_resultcard',
+        'username' => 'timedoorbookstore_resultcard',
+        'password' => '3f4d31795da04b578d4f62796b89106f10ecc5f4',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -405,11 +405,11 @@
       array (
         'driver' => 'sqlsrv',
         'url' => NULL,
-        'host' => 'localhost',
-        'port' => '1433',
-        'database' => 'laravel',
-        'username' => 'root',
-        'password' => '',
+        'host' => 'at0plk.h.filess.io',
+        'port' => '61001',
+        'database' => 'timedoorbookstore_resultcard',
+        'username' => 'timedoorbookstore_resultcard',
+        'password' => '3f4d31795da04b578d4f62796b89106f10ecc5f4',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -426,7 +426,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'laravel_database_',
+        'prefix' => 'timedoor_bookstore_database_',
         'persistent' => false,
       ),
       'default' => 
@@ -474,7 +474,7 @@
       array (
         'driver' => 'local',
         'root' => '/home/workspace/project/timedoor-bookstore/storage/app/public',
-        'url' => 'http://localhost:8000/storage',
+        'url' => 'https://timedoor-bookstore.vercel.app/storage',
         'visibility' => 'public',
         'throw' => false,
         'report' => false,
@@ -739,7 +739,7 @@
         'username' => NULL,
         'password' => NULL,
         'timeout' => NULL,
-        'local_domain' => 'localhost',
+        'local_domain' => 'timedoor-bookstore.vercel.app',
       ),
       'ses' => 
       array (
@@ -789,7 +789,7 @@
     'from' => 
     array (
       'address' => 'hello@example.com',
-      'name' => 'Laravel',
+      'name' => 'Timedoor Bookstore',
     ),
     'markdown' => 
     array (
@@ -863,13 +863,13 @@
     ),
     'batching' => 
     array (
-      'database' => 'sqlite',
+      'database' => 'mysql',
       'table' => 'job_batches',
     ),
     'failed' => 
     array (
       'driver' => 'database-uuids',
-      'database' => 'sqlite',
+      'database' => 'mysql',
       'table' => 'failed_jobs',
     ),
   ),
@@ -913,7 +913,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'laravel_session',
+    'cookie' => 'timedoor_bookstore_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,

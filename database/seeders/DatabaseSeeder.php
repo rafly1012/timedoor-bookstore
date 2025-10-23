@@ -17,8 +17,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $driver = DB::getDriverName();
+
         // Nonaktifkan foreign key checks untuk SQLite
-        DB::statement('PRAGMA foreign_keys = OFF;');
+        if ($driver === 'sqlite') {
+            DB::statement('PRAGMA foreign_keys = OFF;');
+        } elseif ($driver === 'mysql') {
+            DB::statement('SET FOREIGN_KEY_CHECKS = 0;');
+        }
 
         $this->command->info('Membuat 1.000 author...');
         $this->createAuthorsInBulk();
@@ -42,7 +48,11 @@ class DatabaseSeeder extends Seeder
         $this->command->info('✅ Sudah selesai membuat 500.000 rating.');
 
         // Aktifkan kembali foreign key checks
-        DB::statement('PRAGMA foreign_keys = ON;');
+        if ($driver === 'sqlite') {
+            DB::statement('PRAGMA foreign_keys = ON;');
+        } elseif ($driver === 'mysql') {
+            DB::statement('SET FOREIGN_KEY_CHECKS = 1;');
+        }
 
         $this->command->info('✅ Semua data berhasil di-generate!');
     }

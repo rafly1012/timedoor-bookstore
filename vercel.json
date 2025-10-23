@@ -16,8 +16,8 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://admin-batako.vercel.app",
-        "APP_KEY": "base64:IJzACnsQY/TkvsBR59O6PSdgp46Lm+2gl2NGAorxG+Q=",
+        "APP_URL": "https://timedoor-bookstore.vercel.app",
+        "APP_KEY": "base64:1iOvZ6c22BVlagsr3GxuakwwbGgIsNdmw9lV4hE7Igo=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
@@ -28,10 +28,10 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "DB_CONNECTION": "mysql",
-        "DB_HOST": "ocg461.h.filess.io",
-        "DB_PORT": "61031",
-        "DB_DATABASE": "adminbatako_batrocket",
-        "DB_USERNAME": "adminbatako_batrocket",
-        "DB_PASSWORD": "05b5123471035f7734657504a9bcee13b3679b76"
+        "DB_HOST": "at0plk.h.filess.io",
+        "DB_PORT": "61001",
+        "DB_DATABASE": "timedoorbookstore_resultcard",
+        "DB_USERNAME": "timedoorbookstore_resultcard",
+        "DB_PASSWORD": "3f4d31795da04b578d4f62796b89106f10ecc5f4"
     }
 }
